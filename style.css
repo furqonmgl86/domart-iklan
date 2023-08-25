@@ -1,0 +1,112 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+body {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+.tampilan-tv {
+  height: 100%;
+  width: 100%;
+  background: red;
+  position: relative;
+}
+.box-main-tv {
+  width: 100%;
+  height: 100%;
+  background: blue;
+}
+.box-main-tv img {
+  width: 100%;
+}
+
+.box-running-text {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 50px;
+  width: 100%;
+  background: #d7202a;
+  border-top: 1px solid white;
+  color: #fff;
+  z-index: 100;
+}
+
+/* Running Text Design */
+/* .group {
+  position: relative;
+  height: 30px;
+  overflow: hidden;
+  color: #fff;
+  background-color: #0000008e;
+  border-bottom: 2px solid rgb(53, 203, 68);
+} */
+.group .text {
+  font-family: "Poppins", sans-serif;
+  position: absolute;
+  font-weight: 400;
+  line-height: 50px;
+  padding: 0;
+  width: max-content;
+  animation: my-animation 20s linear infinite;
+}
+
+/* Jam Design */
+.jam {
+  height: 80px;
+  width: 200px;
+  background: #d7202a;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background: #10101e; */
+  border-right: 1px solid white;
+  border-top: 1px solid white;
+}
+.jam .datetime {
+  color: #fff;
+  /* background: #d7202a; */
+  font-family: "Segoe UI", sans-serif;
+  width: 100%;
+  padding: 15px 10px;
+  /* border: 3px solid #2e94e3; */
+  border-radius: 5px;
+}
+
+.date {
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  /* letter-spacing: 3px; */
+}
+.time {
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.time span:not(:last-child) {
+  position: relative;
+  margin: 0 6px;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 3px;
+}
+.time span:last-child {
+  /* background: #2e94e3; */
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  /* margin-top: 10px; */
+  padding: 0 5px;
+  border-radius: 3px;
+}
